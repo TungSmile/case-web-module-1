@@ -1,0 +1,18 @@
+
+body1 {
+    border: white;
+
+    padding: 100px;
+    background-image: url("https://i.pinimg.com/originals/ce/12/25/ce1225f92e766b3a87113dc69560e88f.jpg");
+
+}
+table{
+    background-color: white;
+
+}
+table,tr,td{
+    border: 1px solid black;
+}
+input{
+    width: 72px;
+}
