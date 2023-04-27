@@ -10,6 +10,7 @@ class User {
         this.pass = pass;
         this.score = 0;
         this.role = member;
+        this.status=false;
     }
 }
 
@@ -23,7 +24,10 @@ function login() {
     for (let i = 0; i < data.length; i++) {
         if (id === data[i].id && pass === data[i].pass) {
             if (data[i].role === 1) {
-                location.href = 'member.html';
+                data[i].status=true;
+                localStorage.setItem("data", JSON.stringify(data));
+                location.href = 'game.html';
+
             } else {
                 location.href = 'admin.html';
 
